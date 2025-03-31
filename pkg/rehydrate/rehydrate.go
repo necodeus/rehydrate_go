@@ -344,6 +344,9 @@ func Rehydrate(inputString string) (string, error) {
 		"EmptyRef": func(val interface{}) (interface{}, error) {
 			return val, nil
 		},
+		"ShallowReactive": func(val interface{}) (interface{}, error) {
+			return val, nil
+		},
 	})
 	if err != nil {
 		return "", err
